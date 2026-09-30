@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17">
+  <diagram id="vehiculos" name="Registro de vehículos">
+    <mxGraphModel dx="1400" dy="2300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="2810" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="REGISTRO DE VEHÍCULOS" style="text;strokeColor=none;fillColor=none;fontStyle=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="25" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="INICIO" style="ellipse;fillColor=#dcebd7;strokeColor=#5c8c48;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="610" y="100" width="180" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="init" value="Crear Scanner&#10;vehiculos = 0; recaudacion = 0" style="rounded=0;fillColor=#e8f0fe;strokeColor=#4772ad;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="510" y="205" width="380" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="read" value="Mostrar tipo:&#10;1. Automovil   2. Motocicleta&#10;3. Camioneta   0. Salir&#10;Leer tipo" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="470" y="340" width="460" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="loop" value="¿tipo ≠ 0?" style="rhombus;fillColor=#fff3d6;strokeColor=#bd8b22;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="515" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="badtype" value="¿tipo &lt; 1 O tipo &gt; 3?" style="rhombus;fillColor=#fff3d6;strokeColor=#bd8b22;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="550" y="710" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="typeerror" value="Mostrar «Tipo invalido.&#10;Elija una opcion entre 0 y 3.»" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="100" y="730" width="330" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="car" value="¿tipo == 1?" style="rhombus;fillColor=#fff3d6;strokeColor=#bd8b22;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="570" y="900" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="carname" value="nombreTipo = «Automovil»" style="rounded=0;fillColor=#e8f0fe;strokeColor=#4772ad;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="925" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="motor" value="¿tipo == 2?" style="rhombus;fillColor=#fff3d6;strokeColor=#bd8b22;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1070" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="motorname" value="nombreTipo = «Motocicleta»" style="rounded=0;fillColor=#e8f0fe;strokeColor=#4772ad;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="1095" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="truckname" value="nombreTipo = «Camioneta»" style="rounded=0;fillColor=#e8f0fe;strokeColor=#4772ad;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1250" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="hours" value="Mostrar «Numero de horas:»&#10;Leer horas" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1410" width="400" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="badhours" value="¿horas ≤ 0?" style="rhombus;fillColor=#fff3d6;strokeColor=#bd8b22;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1550" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hourretry" value="Mostrar «Ingrese horas mayores que cero:»&#10;Leer horas" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="1560" width="410" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rate" value="Mostrar «Tarifa por hora para »&#10;+ nombreTipo + «:»&#10;Leer tarifa" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1730" width="440" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="badrate" value="¿tarifa &lt; 0?" style="rhombus;fillColor=#fff3d6;strokeColor=#bd8b22;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1900" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rateretry" value="Mostrar «Ingrese una tarifa no negativa:»&#10;Leer tarifa" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="1910" width="410" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="calc" value="valor = horas * tarifa&#10;recaudacion = recaudacion + valor&#10;vehiculos++" style="rounded=0;fillColor=#e8f0fe;strokeColor=#4772ad;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="490" y="2080" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="out" value="Mostrar «Vehiculo: » + nombreTipo&#10;Mostrar «Valor individual: » + valor" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="470" y="2240" width="460" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="readagain" value="Mostrar tipo:&#10;1. Automovil   2. Motocicleta&#10;3. Camioneta   0. Salir&#10;Leer tipo" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="470" y="2410" width="460" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="totals" value="Mostrar «Vehiculos registrados: » + vehiculos&#10;Mostrar «Recaudacion total: » + recaudacion" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#e0f2f1;strokeColor=#32847c;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="700" width="480" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="close" value="scanner.close()" style="rounded=0;fillColor=#e8f0fe;strokeColor=#4772ad;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="900" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="FIN" style="ellipse;fillColor=#dcebd7;strokeColor=#5c8c48;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="1050" width="180" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="init" target="read">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="read" target="loop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="truckname" target="hours">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hours" target="badhours">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rate" target="badrate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="calc" target="out">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="out" target="readagain">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="totals" target="close">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="close" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e36" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="loop" target="badtype">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e37" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="loop" target="totals">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e38" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="badtype" target="typeerror">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e39" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="badtype" target="car">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="typeerror" target="readagain">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="265" y="2465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e41" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="car" target="carname">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e42" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="car" target="motor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e43" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="motor" target="motorname">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e44" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="motor" target="truckname">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="carname" target="hours">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1340" y="957.5" />
+              <mxPoint x="1340" y="1360" />
+              <mxPoint x="700" y="1360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="motorname" target="hours">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="1360" />
+              <mxPoint x="700" y="1360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e47" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="badhours" target="hourretry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hourretry" target="badhours">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1235" y="1520" />
+              <mxPoint x="700" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e49" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="badhours" target="rate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e50" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="badrate" target="rateretry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rateretry" target="badrate">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1235" y="1860" />
+              <mxPoint x="700" y="1860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e52" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="badrate" target="calc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#46566b;strokeWidth=1.5;fontFamily=Arial;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="readagain" target="loop">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="2630" />
+              <mxPoint x="50" y="2630" />
+              <mxPoint x="50" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
