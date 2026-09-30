@@ -30,6 +30,7 @@ programas, documentos, flujogramas e infografías, según corresponda.
 | [🚗 Tarea 3](./_03_TercerActividadT3/) | Parqueadero universitario |
 | [🔀 Tarea 4](./_04_CuartaActividadT4/) | Estructuras de selección |
 | [🔁 Tarea 5](./_05_QuintaActividadT5/) | Estructuras de control |
+| [💀 Tarea 6](./_08_EvidenciasGitNot/). | Evidencias de GitHub + Block de Notas |
 | [🌐 APE 1](./APE1%20-%20Lenguajes%20de%20programacion/) | Lenguajes de programación |
 | [🛠️ APE 2](./Ape2%20-%20EstructurasSeleccion/) | Control de hora, cuentas bancarias y gestión de un jean |
 
