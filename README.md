@@ -43,7 +43,6 @@ Más que almacenar códigos, este espacio representa mi evolución: desde compre
 |:---:|:---|:---|
 | 🚀 | **01 · Fundamentos de programación** | Lógica, algoritmos y estructuras de control |
 | 🧩 | **02 · Programación orientada a objetos** | Clases, objetos, métodos y archivos |
-| 🔜 | **03 · Próximas unidades** | En construcción |
 
 </div>
 
